@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width" initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore SportWear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="">Trang Chủ</a></li>
+                    <li><a href="">Sản Phẩm</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Liên Hệ</a></li>
+                    <li><a href="">Tài Khoản</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" alt="cart" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+    </div>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Tất Cả Sản Phẩm</h2>
+            <select>
+                <option>Hiển thị mặc định</option>
+                <option>Hiển thị theo giá </option>
+                <option>Hiển thị theo độ phổ biến </option>
+                <option>Hiển thị theo đánh giá </option>
+                <option>Hiển thị theo mặt hàng hạ giá </option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg" alt="pro1">
+                <h4>Áo phông in đỏ HRX</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star-half-stroke fa-beat"></i>
+                    <i class="fa-regular fa-star fa-beat"></i>
+                </div>
+                <p>150.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="pro2">
+                <h4>Giày thể thao đen HRX</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star-half-stroke fa-beat"></i>
+                </div>
+                <p>300.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="pro3">
+                <h4>Quần jogger nam xám</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star-half-stroke fa-beat"></i>
+                    <i class="fa-regular fa-star fa-beat"></i>
+                </div>
+                <p>200.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="pro4">
+                <h4>Áo polo thể thao PUMA </h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-regular fa-star fa-beat"></i>
+                </div>
+                <p>250.000₫</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg" alt="pro5">
+                <h4>Giày chạy bộ xám</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star-half-stroke fa-beat"></i>
+                    <i class="fa-regular fa-star fa-beat"></i>
+                </div>
+                <p>350.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg" alt="pro6">
+                <h4>Áo phông thể thao đen</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star-half-stroke fa-beat"></i>
+                </div>
+                <p>200.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg" alt="pro7">
+                <h4>Tất thể thao</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star-half-stroke fa-beat"></i>
+                    <i class="fa-regular fa-star fa-beat"></i>
+                </div>
+                <p>50.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg" alt="pro8">
+                <h4>Đồng hồ thời trang</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-regular fa-star fa-beat"></i>
+                </div>
+                <p>500.000₫</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="pro9">
+                <h4>Đồng hồ thể thao đen</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star-half-stroke fa-beat"></i>
+                    <i class="fa-regular fa-star fa-beat"></i>
+                </div>
+                <p>450.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="pro10">
+                <h4>Giày chạy bộ đen</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star-half-stroke fa-beat"></i>
+                </div>
+                <p>300.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg" alt="pro11">
+                <h4>Giày lười xám</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star-half-stroke fa-beat"></i>
+                    <i class="fa-regular fa-star fa-beat"></i>
+                </div>
+                <p>250.000₫</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg" alt="pro12">
+                <h4>Quần jogger nam đen</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-solid fa-star fa-beat"></i>
+                    <i class="fa-regular fa-star fa-beat"></i>
+                </div>
+                <p>250.000₫</p>
+            </div>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span> &#8594;</span>
+            
+        </div>
+     </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Tải Ngay Ứng Dụng Của Chúng Tôi</h3>
+                    <p>Dành cho Android/Dành cho Ios</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Mục đích của chúng tôi là mang đến lợi ích và niềm vui của thể thao tới mọi người một cách phù hợp nhất</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Những Liên Kết Hữu Ích</h3>
+                    <ul>
+                        <li>Phiếu giảm giá</li>
+                        <li>Blog</li>
+                        <li>Chính sách hoàn trả</li>
+                        <li>Tham gia cộng đồng</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Theo Dõi Chúng Tôi</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><i class="fa-regular fa-copyright"></i> Copyright 2023 - NMD</p>
+        </div>
+    </div>
+    <!--js for toggle menu-->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight="0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight =="0px")
+            {
+                menuitems.style.maxHeight = "200px"
+            }
+            else
+            {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+</body>
+</html>

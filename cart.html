@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width" initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - RedStore SportWear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Liên Hệ</a></li>
+                    <li><a href="login.html">Tài Khoản</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" alt="cart" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+   <!---cart items details--->
+   <div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Sản Phẩm</th>
+            <th>Số lượng</th>
+            <th>Thành Tiền</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/buy-1.jpg" alt="">
+                    <div>
+                        <p>Áo thun in đỏ HRX</p>
+                        <small>Giá: 150.000₫</small><br>
+                        <a href="">Loại bỏ</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>150.000₫</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/buy-2.jpg" alt="">
+                    <div>
+                        <p>Giày thể thao đen HRX</p>
+                        <small>Giá: 300.000₫</small><br>
+                        <a href="">Loại bỏ</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>300.000₫</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/buy-3.jpg" alt="">
+                    <div>
+                        <p>Quần jogger nam xám</p>
+                        <small>Giá: 200.000₫</small><br>
+                        <a href="">Loại bỏ</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>200.000₫</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Thành Tiền</td>
+                <td>650.000₫</td>
+            </tr>
+            <tr>
+                <td>Thuế VAT</td>
+                <td>10.000₫</td>
+            </tr>
+            <tr>
+                <td>Tổng</td>
+                <td>660.000₫</td>
+            </tr>
+        </table>
+    </div>
+
+   </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Tải Ngay Ứng Dụng Của Chúng Tôi</h3>
+                    <p>Dành cho Android/Dành cho Ios</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Mục đích của chúng tôi là mang đến lợi ích và niềm vui của thể thao tới mọi người một cách phù hợp nhất</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Những Liên Kết Hữu Ích</h3>
+                    <ul>
+                        <li>Phiếu giảm giá</li>
+                        <li>Blog</li>
+                        <li>Chính sách hoàn trả</li>
+                        <li>Tham gia cộng đồng</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Theo Dõi Chúng Tôi</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><i class="fa-regular fa-copyright"></i> Copyright 2023 - NMD</p>
+        </div>
+    </div>
+    <!--js for toggle menu-->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight="0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight =="0px")
+            {
+                menuitems.style.maxHeight = "200px"
+            }
+            else
+            {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+</body>
+</html>
